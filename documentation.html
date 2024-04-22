@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Public Art Metadata</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="current" href="documentation.html">Documentation</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <br><h1>Documentation</h1><br>
+                <a href="#general">Skip to General Fields</a>
+                <a href="#work">Skip to Work Fields</a>
+                <a href="#iapa">Skip to IAPA/Impact Fields</a>
+                <br>
+                <div class="table-container">
+                    <h2 id="general">General Fields</h2>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>ID</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>A unique identifier assigned to the case study.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No, each identifier should be unique to each case.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>String should be an alphanumeric code abiding by IPA standards.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>00045, 0003A</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Title - Primary</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Name given to the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - only one primary title per project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Teeter Totter Wall</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Title - Alternative</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>An alternative name for the project.</td>
+                            </tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>The alternative title can be a colloquial name for how the project is commonly, but unofficially, known. It can also be a title in a different language.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>ArtsPark (name by which The ArtsPark at Young Circle/Millenium Springs is commonly referred)</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Creator - Primary</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Person (such as the artist, architect, designer, etc.), group, or entity responsible for creating the work.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes – many cases have more than one creator and all creators should be credited.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Names should be recorded according to artists’ preference first, then follow a ‘Firstname Lastname’ or ‘Singlename’ capitalization standard.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Ronald Rael and Virginia San Fratello (Rael San Fratello); Omar Rios (Colectivo Chopeke)</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Creator - Alternative</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Records an alternative name/moniker/persona/etc. for a creator that is not captured in the ‘Creator’ field.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Only needed if creator has another name that is important to be captured</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - May be repeated for as many alternative names as are necessary.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Name should be formatted to artists’ preferences; may include special characters as needed if those characters are supported.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Rael</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Creator - Makeup</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Describes the makeup of creator(s) represented by the ‘Creator’ field (are they an individual, a group, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - All creators should have a type assigned.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Should be repeated for as many creators are listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Individual, Group, Collective, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Individual</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Creator - Role</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Denotes the role the creator played in the case study; likely aligns with job/profession title, but does not have to.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - Each listed created should have a recorded role.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Should be repeated for as many creators are listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Artist, Architect, Curator, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Artist</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Funding - Type</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The funding model or method of funding for the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required, even if the answer is 'Unknown'</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - if the funding for a project has multiple types, then the field can be repeated for each.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Self-funded, grant-funded, percent-for-art program, unknown, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Crowdfunded</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Funding - Budget</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The amount for the budget that was allocated for the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Exact budget amount may not be known.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - If the funding for a project is split into disparate pieces, field can be repeated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Should include a number and the currency type;  approximations are valid.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>900 dollars</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Funding - Source</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The person or entity who provided the funding.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - This information may not be readily available depending on the project</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - if funding comes from multiple sources, please list them all.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>The National Endowment for the Arts, Americans for the Arts, the Mellon Foundation, etc.</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Location - Region</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Region of the world the project comes from.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - Each case should have, at the least, a region recorded for it.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - while most proejcts will only have one region, some projects may be located in multiple regions simultaneously, or move regions as part of the project itself.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>North America, Africa, East and Southeast Asia, West, Central and South Asia, Latin America, Eurasia, Oceania</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>North America</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Location - Country</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Country (or countries) the project resides in.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - for searchability purposes, each project should have at least one country listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - like Region, projects may span national borders. As such, field can be repeated.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>United States; Mexico</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Location - City</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>City (or cities) the project resides in.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - It may be difficult or irrelevant to name the city in which the project is located.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - like other Location fields, projects may vary across city boundaries and each city should be listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>El Paso; Juárez</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Location - Placement</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>General name for location where project is placed/occurs.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - If no term easily applies, default to ‘public space.’</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - If present, one descriptive name should be listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Controlled list of possible placements can be found on the glossary page. If no other placement is identified, default to ‘public space.’</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>park</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Coordinates - Latitude</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Latitudinal coordinates of the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - for geo-tagging purposes.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Decimal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>31.766886</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Coordinates - Longitude</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Longitudinal coordinates of the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - for geo-tagging purposes.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Decimal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>-106.45105</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Date - Year Started</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The year in which work on the project began (this includes planning and design stages).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Date may not be known, or may the same as Year Completed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Date (YYYY)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>2019</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Date - Year Completed</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The year in which work on the project was completed (installed, made available for viewing, etc.).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - This field is highly recommended but in some cases, the completion date may be unknown.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Date (YYYY)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>2020</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Duration</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>The duration of the project; the length of time the work has/will be completed and made publicly available.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - While may not be known at time of research, should be added and updated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Permanent, Temporary, Iterative</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Temporary</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Duration - Viewability</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Denotes the viewability of the project. Is the project currently On-View or Off-View?</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required  - While may not be known at time of research, should be added and updated as viewability of project changes.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - Since each case study is recording one project, only one viewability should be needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Boolean</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>On-View, Off-View</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>On-View</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Duration - Specifics</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Specific and/or contextual information about the duration of the project (e.g. specific length, marking a permanent project as ended, etc.)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Some projects may not need more specifics regarding Duration.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - Since the field is free text, all information should be recorded in one field.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>45 minutes total</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Event</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Describes the type of event that the project is associated with/a part of.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - May not be applicable for all projects.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Repeat as needed for types of events project is part of.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>parade, festival, workshop, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>protest</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Description</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>A free-text description of the case study, which can include a description of work and information about the background and/or context of the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - Each project should include a description/narrative.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Not repeatable</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>The length of the description is left to the researcher's discretion.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Teeter Totter Wall was a project aiming to enter the socio-political arena in a playful way. The artists engaged in a creative process to find a mechanism for engaging in an angry, growing and hate-filled political discussion with a presentation that brings empathy and playfulness...</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Subject</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Subject tag(s) that represent major keywords of the case study and/or project (can also be taken from other fields for searchability reasons).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - At least one subject tag is required to promote searchability.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated as many times as needed; ideally, each project should have multiple subject tags.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Recommended to be pulled from LCSH.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Public Health, Literacy, Democracy, etc.</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Related - Images</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Image(s) assocaited with the project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - At least one image should be attached to the proejct.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated up to 20 images.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Image File</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Images should be .jpg format files.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>teetertotter_above_view.jpg</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="general">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Related - Links</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>General</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Links to related works and/or supplementary information.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated for as many links as are applicable.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Link</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Link to an interview where the artist talks about their purpose for creating the project, commissioning agency website, etc.</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="work">Work Fields</h2>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Materiality</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Materials used in the creation of the work and/or parts of the work. Can be materials used in the physical construction (e.g. wood, metal, cloth) or materials used in the experience of the work (e.g. video).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated for as many materials are known.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Controlled vocabulary of collected terms can be found here.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Plastic, metal, marble, steel</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Work Type</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Medium of the work and the genre within which the work can broadly fit.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - While some cases may be difficult to classify, ideally each should have a medium listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - While most cases will likely only have one, since some cases combine/exist between mediums, field can be repeated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Controlled vocabulary of collected terms can be found here.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Sculpture</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Dimensions - Amount</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Number value listed in the dimensions of the work.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Not every project will have measurable dimensions.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Field can be repeated as many times as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Integer, Decimal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>900</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Dimensions - Units</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Units for the Dimensions - Amount field listed above</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Only required if an Amount field is listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - If more than one Amount is listed, then a corresponding number of units should be listed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>dollars</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Dimensions - Summary</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Summarizes all of the units associated with the project into one field, including dimensions of project pieces if multiple are present.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Required if at least one set of dimensions are recorded.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - Due to nature  field, all iterations of dimensions should be combined into one Summary field
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>900 dollars, 25 meters…</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Theme</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Major themes present in the work. This includes themes present within and represented by the work. These themes are different from social/community impact themes that are represented in the IAPA/Impact fields.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Not all cases may have an immediately identifiable theme.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Multiple themes will likely be present in most cases, so field can be repeated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>play, activism</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Style</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Style of the work. For example, if the work is sculptural, what style of sculpture is used, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Highly recommended to add more specificity/searchability, but can be omitted.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - If multiple styles are identified, the field can be repeated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Representation</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="work">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Comment</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>Work</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Other comments about the work that the researcher feels are important to mention but are not captured in other fields.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Only necessary if extra information is present the researcher feels is important.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - Because of the field’s variable length, only one Comment field should be needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>A total of 3 teeter totters were constructed and had bike horns attached to the seats for added fun.</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="iapa">IAPA/Impact Fields</h2>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Researcher</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td >IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Name of the researcher responsible for researching the project for the IPA.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - At least one researcher should be listed for each project.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - If more than one researcher is credited, the field can be repeated as needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Use same name conventions as specified in the Creator - Primary field.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Jen Krava</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Date - Year Nominated</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Year the case study was nominated for the International Award for Public Art (IAPA).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - All IAPA case studies will have a nomination year.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Date (YYYY)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>2021</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Impact - Statement</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Statement written by the researcher denoting the social/community/etc. impact that the case study intends to or has had.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - Considering the nature of the IAPA, a statement regarding the impact of a case study should be present.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>This project juxtaposes bright colors, youth, play, fun, and joy against policies and mis-beliefs anchored in nationalism, elitism, militarism, and anti-egalitarianism...</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Context - Type</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Category of contextual information provided about the work.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Enum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>Community, Social, Political, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Community</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Context - Description</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Description/narrative of provided contextual information that the researcher has deemed important to the work and/or its impact.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Ronald and Virginia had been involved in a number of projects in and around Marfa, Texas...</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Post-IAPA - Juror Notes</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Records juror notes from the IAPA judging phase.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Required - Each case study should have at least one field of juror notes attached.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated for as many sets of juror notes there are for each case.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Post-IAPA - Updates</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Records any updates to the case studies following initial IAPA research.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - May not be applicable/needed for all case studies.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>No - Because of the variable length of the field, the one Updates field can be added to as new updates are available.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>Free Text</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>A new version of this project was launched in 2023 in Arizona</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Legal - Copyright</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Statement regarding copyright of anything regarding the case study or work/related items requires it.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Required if copyright statements are required, but can be omitted otherwise.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated if multiple statements are needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Copyright &copy; 2024 Institute for Public Art</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="1" class="iapa_impact">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Field Name</strong></td>
+                                <td><strong>Legal - Rights</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field Category</strong></td>
+                                <td>IAPA/Impact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Description</strong></td>
+                                <td>Statement regarding rights and ownership.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Requirement</strong></td>
+                                <td>Optional - Required if rights statements are required, but can be omitted otherwise.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Repeatability</strong></td>
+                                <td>Yes - Can be repeated if multiple statements are needed.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data Type</strong></td>
+                                <td>String</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Usage Notes</strong></td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td><em>Project rights belong to Rael San Fretello</em></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <footer id="documentation">University of Michigan School of Information &copy; 2024</footer>
+    </div>
+</body>
