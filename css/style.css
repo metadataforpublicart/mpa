@@ -146,8 +146,8 @@ td:nth-child(even) {
 
 #about {
     padding-top: 30px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
     text-align: center;
     font-size: large;
 }
@@ -169,8 +169,8 @@ td:nth-child(even) {
 
 #thanks {
     text-align: center;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #page-container-about {
@@ -255,6 +255,21 @@ td:nth-child(even) {
 
 #vocab {
     padding-left: 50px;
+}
+
+#crosswalks {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: large;
+}
+
+.crosswalks {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 800px) {
